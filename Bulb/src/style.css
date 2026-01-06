@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255, 215, 0, 0.15), transparent 45%),
+    radial-gradient(circle at top, #1e293b, #020617);
+
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+
+.b {
+  width: 340px;
+  padding: 35px 25px;
+  background: linear-gradient(145deg, #020617, #020617);
+  border-radius: 26px;
+  text-align: center;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 35px 70px rgba(0,0,0,0.7);
+}
+
+
+.b img {
+  width: 160px;
+  height: 190px;
+  object-fit: contain;
+  margin-bottom: 30px;
+  transition: 0.4s ease;
+}
+
+
+.b img[src="/on.jpg"] {
+  filter: drop-shadow(0 0 20px rgba(255,215,0,0.6))
+          drop-shadow(0 0 50px rgba(255,215,0,0.4));
+}
+
+
+.b button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 30px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+/* ON button */
+.b button:first-of-type {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ecfdf5;
+}
+
+.b button:first-of-type:hover {
+  box-shadow: 0 0 20px rgba(34,197,94,0.8);
+  transform: translateY(-2px);
+}
+
+/* OFF button */
+.b button:last-of-type {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: white;
+}
+
+.b button:last-of-type:hover {
+  box-shadow: 0 0 20px rgba(239,68,68,0.8);
+  transform: translateY(-2px);
+}
